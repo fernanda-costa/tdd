@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Salarios minimos</title>
+</head>
+<body>
+
+	<table>
+		<thead>
+			<tr>
+				<th>estado</th>
+				<th>salario</th>
+				<th>dataInicio</th>
+				<th>dataFinal</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:if="{$salarios.empty}">
+				<td colspan="2">Sem salários</td>
+			</tr>
+		</tbody>
+
+
+	</table>
+
+
+
+
+</body>
+</html>
